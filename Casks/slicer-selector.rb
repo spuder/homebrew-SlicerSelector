@@ -1,6 +1,6 @@
 cask "slicer-selector" do
-    version "0.3.0"
-    sha256 "14444a6ed04b41fd3f3ffdb20a649b2d535c55712724a0dcc6538abad3f05f8c"
+    version "0.4.0"
+    sha256 "208e33007ea2ddb604b6837bba4cea2fdcf689ec40afee1ac5d5d87bff74e493"
   
     url "https://github.com/spuder/SlicerSelector/releases/download/v#{version}/SlicerSelector.app.zip"
     name "SlicerSelector"
