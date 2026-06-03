@@ -1,6 +1,6 @@
 cask "slicer-selector" do
-    version "0.11.2"
-    sha256 "d5a42db5089dca81ad2024f7f92a2feb8fabd03d91459737f06a574de45539d3"
+    version "0.12.0"
+    sha256 "63d06bdd1f1ff45b7be7d96eae7c44dd82f4867e51ba74e1bff30961cee3a5c2"
   
     url "https://github.com/spuder/SlicerSelector/releases/download/v#{version}/SlicerSelector.app.zip"
     name "SlicerSelector"
@@ -8,6 +8,8 @@ cask "slicer-selector" do
     homepage "https://github.com/spuder/SlicerSelector"
   
     app "SlicerSelector.app"
+
+  no_quarantine
   
     zap trash: [
       "~/Library/Application Support/SlicerSelector",
