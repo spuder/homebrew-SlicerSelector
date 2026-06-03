@@ -8,8 +8,6 @@ cask "slicer-selector" do
     homepage "https://github.com/spuder/SlicerSelector"
   
     app "SlicerSelector.app"
-
-  no_quarantine
   
     zap trash: [
       "~/Library/Application Support/SlicerSelector",
