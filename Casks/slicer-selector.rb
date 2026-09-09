@@ -9,9 +9,8 @@ cask "slicer-selector" do
   
     app "SlicerSelector.app"
 
-    postflight do
-        system_command "/usr/bin/xattr",
-        args: ["-dr", "com.apple.quarantine", "#{appdir}/SlicerSelector.app"]
+    postflight_steps do
+        run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/SlicerSelector.app"]
     end
   
     zap trash: [
